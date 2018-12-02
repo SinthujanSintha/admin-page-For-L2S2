@@ -124,7 +124,7 @@ a:hover {
   transition-delay: 300ms;
 }
 .sidebar-menu {
-  position: absolute;
+  position:absolute;
   float: left;
   width: 220px;
   top: 0px;
@@ -259,7 +259,7 @@ a:hover {
 }
 .logo-name {
     float: left;
-    width: 30%;
+    width: 116%;
     margin: 0% 3% 0% 2%;
 }
 .logo-name h1 {
@@ -3327,10 +3327,10 @@ span.malorum-pro {
 .chart-layer1-right {
     padding: 0em 0em 0em 0.5em;
 }
-.chart-layer2-right {
+.chart-layer2-left2 {
     padding: 0em 0.5em 0em 0em;
 }
-.chart-layer2-left {
+.chart-layer2-right2 {
     padding: 0em 0em 0em 0.5em;
 }
 canvas#radar {
@@ -3576,6 +3576,14 @@ li.dropdown.head-dpdn a.dropdown-toggle {
     padding: 0px;
     float: left;
     width: 49%;
+}
+.chart-layer2-right h3 {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #5F5D5D;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Carrois Gothic', sans-serif;
 }
 .chart-layer2-left {
     padding: 0px;
@@ -4269,7 +4277,7 @@ canvas#bar {
     width: 275px !important;
 }
 .header-main {
-    padding: 1em 1em;	
+    padding: 0em 1em;	
 }
 .fixed {
     width: 83%;
