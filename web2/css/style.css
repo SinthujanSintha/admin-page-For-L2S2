@@ -344,7 +344,7 @@ div.dataTables_filter {
 /*--nav strip start here--*/
 .header-main {
     background: #fff;
-    padding: 1em 2em;
+    padding: 0em 2em;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
@@ -1570,7 +1570,12 @@ span.malorum-pro {
     margin: 2em 0em;
     height: 300px;
 }
-
+.chit-chat-layer1t {
+    margin: 2em 0em;
+    height: 300px;
+    width: 100%;
+    margin-left: -26px
+}
 .chit-chat-heading {
     font-size: 1.2em;
     font-weight: 700;
@@ -1777,6 +1782,7 @@ span.shoppy-rate h4 {
     color: #68AE00;
     font-family: 'Carrois Gothic', sans-serif;
 }
+
 
 .popular-brand {
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.15);
