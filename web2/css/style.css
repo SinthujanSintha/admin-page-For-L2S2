@@ -1574,7 +1574,8 @@ span.malorum-pro {
     margin: 2em 0em;
     height: 300px;
     width: 100%;
-    margin-left: -26px
+    margin-left: -26px;
+  
 }
 .chit-chat-heading {
     font-size: 1.2em;
@@ -1588,6 +1589,8 @@ span.malorum-pro {
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.15);
     padding: 1.34em 1em;
     background: #00a65a;
+    border: 7px solid lightgreen;
+    border-radius: 57px;
 }
 
 /*--geochart start here--*/
@@ -2860,7 +2863,7 @@ ul.nav.tabs li a span {
 }
 
 .inbox-details-default {
-    background: #fff;
+    background: #00a65a;
     font-family: 'Carrois Gothic', sans-serif;
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.15);
 }
@@ -2887,7 +2890,7 @@ ul.nav.tabs li a span {
 }
 
 .inbox-details-body input[type="text"] {
-    border: 4px solid #ccc;
+    border: 4px solid #1d0f0f;
     padding: 5px 8px;
     color: #616161;
     background: #fff;
@@ -4022,6 +4025,7 @@ p.bottom {
 
     .chit-chat-layer1-left {
         padding: 0em 0.5em 0em 0em;
+       
     }
 
     .market-update-gd {
