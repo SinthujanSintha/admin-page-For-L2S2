@@ -2892,8 +2892,8 @@ ul.nav.tabs li a span {
 .inbox-details-body input[type="text"] {
     border: 4px solid #1d0f0f;
     padding: 5px 8px;
-    color: #616161;
-    background: #fff;
+    color: whitesmoke;
+    background:tomato;
     box-shadow: none !important;
     width: 100%;
     font-size: 0.85em;
@@ -2906,6 +2906,40 @@ ul.nav.tabs li a span {
     font-family: 'Carrois Gothic', sans-serif;
 }
 
+.inbox-details-body input[type="email"] {
+    border: 4px solid #1d0f0f;
+    padding: 5px 8px;
+    color: whitesmoke;
+    background:tomato;
+    box-shadow: none !important;
+    width: 100%;
+    font-size: 0.85em;
+    font-weight: 300;
+    height: 40px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    resize: none;
+    margin-bottom: 1em;
+    font-family: 'Carrois Gothic', sans-serif;
+}
+
+
+.inbox-details-body input[type="password"] {
+    border: 4px solid #1d0f0f;
+    padding: 5px 8px;
+    color: whitesmoke;
+    background:tomato;
+    box-shadow: none !important;
+    width: 100%;
+    font-size: 0.85em;
+    font-weight: 300;
+    height: 40px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    resize: none;
+    margin-bottom: 1em;
+    font-family: 'Carrois Gothic', sans-serif;
+}
 .inbox-details-body textarea {
     border: 1px solid #ccc;
     padding: 5px 8px;
