@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Admin Edit Owner</title>
+	<title>Admin Add Employee</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -114,8 +114,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<nav aria-label="breadcrumb br" style=" margin-left:-5px;border-radius:3.25rem;">
 													<ol class="breadcrumb" style="background-color: #07f389;">
 													  <li class="breadcrumb-item"><a href="index.html"style="color:chocolate; font-weight:bold; font-size:27px;">Home</a></li>
-													  <li class="breadcrumb-item"style="color:chocolate; font-weight:bold;font-size:27px;">Owner Information</li>
-													  <li class="breadcrumb-item active" style="color:chocolate;font-size:27px; "aria-current="page">Edit Owner</li>
+													  <li class="breadcrumb-item"style="color:chocolate; font-weight:bold;font-size:27px;">Employee Information</li>
+													  <li class="breadcrumb-item active" style="color:chocolate;font-size:27px; "aria-current="page">Add Employee</li>
 											
 													</ol>
 												
@@ -128,7 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				
 												
 										<div class="chit-chat-heading">
-												<i class="fa fa-align-justify"></i><span style="display:inline-block;width: 10px;"></span>Edit Owner
+												<i class="fa fa-align-justify"></i><span style="display:inline-block;width: 10px;"></span>Employee Entry Form
 										</div>
 				
 										<div class="table-responsive">
@@ -141,7 +141,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														<form class="com-mail" action="">
 															<div class="form-group">
 												
-                                                               <h4 style="color:cornsilk;font-weight: bold">*Owner Name:</h4>
+                                                               <h4 style="color:cornsilk;font-weight: bold">*Employee Name:</h4>
                                                                 <input type="text" name="Owner Name" class="form-control" required placeholder="Enter the owner Name">
                                                                <h4 style="color:cornsilk;font-weight: bold">*Email:</h4>
                                                                     <input type="text" name="OEmail" class="form-control" required placeholder="Enter the Email">
@@ -150,10 +150,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                <h4 style="color:cornsilk;font-weight: bold">*Contact:</h4>
 																	<input type="text" name="OContact" class="form-control" required placeholder="Enter Contact">
 																	<h4 style="color:cornsilk;font-weight: bold">*Type:</h4>
-                                                                    <input type="text" name="type" value="owner" class="form-control" required placeholder="Enter Contact">
+																	
+																	<select name="ddlMemberType" id="ddlMemberType" class="form-control">
+																		<option value="">--Select--</option>
+																					
+																					  <option value="electricians">electricians</option>
+																					  <option value="cleaner">Cleaner</option>
+																					  <option value="Security">Security Guard</option>
+																					 
+																					</select>
 
 
-
+                                                                                    <h4 style="color:cornsilk;font-weight: bold">*Salary:</h4>
+                                                                                    <input type="text" name="OContact" class="form-control" required placeholder="Enter Salary">
 														</div>
 																
 														
