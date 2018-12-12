@@ -5803,6 +5803,13 @@ button.close {
   position: relative;
   padding: 15px;
 }
+.model_view {
+  background: #00c0ef !important;
+  height: 15%;
+}
+.photo_img_round {
+  border-radius: 50px;
+}
 .modal-footer {
   padding: 15px;
   text-align: right;
