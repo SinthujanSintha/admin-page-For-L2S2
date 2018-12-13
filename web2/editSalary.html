@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Admin Edit Floor</title>
+	<title>Admin Edit Salary</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -114,8 +114,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<nav aria-label="breadcrumb br" style=" margin-left:-5px;border-radius:3.25rem;">
 													<ol class="breadcrumb" style="background-color: #07f389;">
 													  <li class="breadcrumb-item"><a href="index.html"style="color:chocolate; font-weight:bold; font-size:27px;">Home</a></li>
-													  <li class="breadcrumb-item"style="color:chocolate; font-weight:bold;font-size:27px;">Floor Information</li>
-													  <li class="breadcrumb-item active" style="color:chocolate;font-size:27px; "aria-current="page">Edit Floor</li>
+													  <li class="breadcrumb-item"style="color:chocolate; font-weight:bold;font-size:27px;">Employee Information</li>
+													  <li class="breadcrumb-item active" style="color:chocolate;font-size:27px; "aria-current="page">Update Salary</li>
 											
 													</ol>
 												
@@ -128,7 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				
 												
 										<div class="chit-chat-heading">
-												<i class="fa fa-align-justify"></i><span style="display:inline-block;width: 10px;"></span>Update Floor
+												<i class="fa fa-align-justify"></i><span style="display:inline-block;width: 10px;"></span>Edit Salry Form
 										</div>
 				
 										<div class="table-responsive">
@@ -140,13 +140,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														
 														<form class="com-mail" action="">
 															<div class="form-group">
-																<h4 style="color:cornsilk;font-weight: bold">Floor No:</h4>
-															<input type="text" name="edit Floor" value="" class="form-control" required="plz"  >
+												
+                                                               <h4 style="color:cornsilk;font-weight: bold">*Employee Name:</h4>
+                                                                <input type="text" value="Sinthu" name="EName" class="form-control" required placeholder="Enter the Employee Name">
+                                                               <h4 style="color:cornsilk;font-weight: bold">*Designation:</h4>
+															   <select name="ddlMemberType" id="ddlMemberType" class="form-control">
+																<option value="">--Select--</option>
+																			
+																			  <option value="electricians">electricians</option>
+																			  <option value="cleaner">Cleaner</option>
+																			  <option value="Security">Security Guard</option>
+																			 
+																			</select>
+                                                                    <h4 style="color:cornsilk;font-weight: bold">*Salary:</h4>
+                                                                <input type="number" name="Opassword" class="form-control" required placeholder="Enter the Salary">
+                                                               <h4 style="color:cornsilk;font-weight: bold">*Issue Date:</h4>
+																	<input type="text" name="OContact" class="form-control" required placeholder="Enter Issue Date">
+																	
+
+
+                                                                                    
 														</div>
 																
 														
-															<input type="submit" value="Update Information"> 
-														<a href="FloorList.html"><input type="button" value="Back" > </a>	
+															<input type="submit" value="Save Information"> 
+														<a href="salaryList.html"><input type="button" value="Back" > </a>	
 														</form>
 													</div>
 												</div>
@@ -200,7 +218,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							 style="float: right"></span></a>
 						<ul>
 							<li id="menu-arquivos"><a href="ownerList.html">Owner List</a></li>
-							<li id="menu-arquivos"><a href="icons.html">Add Owner</a></li>
+							<li id="menu-arquivos"><a href="addOwner.html">Add Owner</a></li>
 						</ul>
 					</li>
 
