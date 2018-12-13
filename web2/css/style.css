@@ -2938,6 +2938,22 @@ ul.nav.tabs li a span {
     margin-bottom: 1em;
     font-family: 'Carrois Gothic', sans-serif;
 }
+.inbox-details-body select {
+    border: 4px solid #1d0f0f;
+    padding: 5px 8px;
+    color: rgb(8, 8, 8);
+    background:white;
+    box-shadow: none !important;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 300;
+    height: 40px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    resize: none;
+    margin-bottom: 1em;
+    font-family: 'Carrois Gothic', sans-serif;
+}
 
 
 .inbox-details-body input[type="password"] {
