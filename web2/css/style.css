@@ -2887,6 +2887,7 @@ ul.nav.tabs li a span {
     display: inline-flex;
     width: 100%;
     padding: 0.4em;
+    border-radius: 1em;
 }
 
 .compose-right p.help-block {
