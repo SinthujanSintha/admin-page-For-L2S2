@@ -16,6 +16,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             window.scrollTo(0, 1);
         }
     </script>
+     <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+     <script>tinymce.init({ selector:'textarea' });</script>//for text editor
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://dhakadailybazar.com/apartment-management-system/dist/js/jquery.mask.min.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
@@ -47,7 +49,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </head>
 
-<body>
+<body style="background:url(images/wall9.jpg) repeat; position: relative;">
     <div class="page-container">
         <div class="left-content">
             <div class="mother-grid-inner">
@@ -148,7 +150,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                         <input type="text" name="Owner Name" class="form-control"
                                                             required placeholder="Enter the owner Name">
                                                         <h4 style="color:cornsilk;font-weight: bold">*Address:</h4>
-                                                        <textarea class="form-control"></textarea>
+                                                        <input type="text" name="Owner Name" class="form-control"
+                                                        required placeholder="Enter the owner Name">
                                                         <h4 style="color:cornsilk;font-weight: bold">*Security Guard Mobile:</h4>
                                                         <input type="tel" name="OEmail" class="form-control" required
                                                         placeholder="Enter the number">
@@ -159,6 +162,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                         <input type="tel" name="OEmail" class="form-control" required
                                                         placeholder="Enter the number">
                                                         <h4 style="color:cornsilk;font-weight: bold">*Building Constructuon Year:</h4>
+                                                        <select name="ddlYear" id="ddlYear" class="form-control">
+                                                            <option value="">--Select Utility Year--</option>
+                                                                          <option value="2000">2000</option>
+                                                                          <option value="2001">2001</option>
+                                                                          <option value="2002">2002</option>
+                                                                          <option value="2003">2003</option>
+                                                                          <option value="2004">2004</option>
+                                                                          <option value="2005">2005</option>
+                                                                          <option value="2006">2006</option>
+                                                                          <option value="2007">2007</option>
+                                                                          <option value="2008">2008</option>
+                                                                          <option value="2009">2009</option>
+                                                                          <option value="2010">2010</option>
+                                                                          <option value="2011">2011</option>
+                                                                          <option value="2012">2012</option>
+                                                                          <option value="2013">2013</option>
+                                                                          <option value="2014">2014</option>
+                                                                          <option value="2015">2015</option>
+                                                                          <option value="2016">2016</option>
+                                                                          <option value="2017">2017</option>
+                                                                          <option value="2018">2018</option>
+                                                                          <option value="2019">2019</option>
+                                                                          <option value="2020">2020</option>
+                                                                          <option value="2021">2021</option>
+                                                                          <option value="2022">2022</option>
+                                                                          <option value="2023">2023</option>
+                                                                        </select>
                                                         
                                                     </div>
 
@@ -175,11 +205,72 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <!-- Last five vistiors -->
 
 
-                        <div class="clearfix"> </div>
+                        <!-- <div class="clearfix"> </div> -->
                     </div>
                  
                
+ <div class="chit-chat-layer1t">
+                        <!-- last Fivve Complain -->
+                        <div class="col-md-12 chit-chat-layer1-left">
+                            <div class="work-progres">
+                                <nav aria-label="breadcrumb br" style=" margin-left:-5px;border-radius:3.25rem;">
+                                    <ol class="breadcrumb" style="background-color: #07f389;">
+                                        <h3 style="color:chocolate; font-weight:bold; font-size:27px;">Owner Property Information</h3>
+                                       
 
+                                    </ol>
+
+                                </nav>
+                                <div class="table-responsive">
+
+                                    <div class="col-md-12 compose-right">
+                                        <div class="inbox-details -default">
+
+                                            <div class="inbox-details-body" style="background-color:black ;border: 3px solid whitesmoke; border-radius: 29px">
+
+                                                <form class="com-mail" action="">
+                                                    <div class="form-group">
+
+                                                        <h4 style="color:cornsilk;font-weight: bold">*Name:</h4>
+                                                        <input type="text" name="Owner Name" class="form-control"
+                                                            required placeholder="Enter the owner Name">
+                                                        <h4 style="color:cornsilk;font-weight: bold">*Address:</h4>
+                                                        <input type="text" name="OPAdd" class="form-control"
+                                                        required placeholder="Enter the Address">
+                                                        <h4 style="color:cornsilk;font-weight: bold">*Phone:</h4>
+                                                        <input type="tel" name="OEmail" class="form-control" required>
+                                                        <h4 style="color:cornsilk;font-weight: bold">   Building Image :</h4>
+                                                        <img class="form-control" src="http://dhakadailybazar.com/apartment-management-system/img/upload/284139E7-07E7-6B29-C215-079DD78D7F58.jpg" style="height:250px;width:200px;" id="output">
+                                                        <input type="hidden" name="img_exist" value="284139E7-07E7-6B29-C215-079DD78D7F58.jpg">
+                                                        
+                                                        <span class="btn btn-file btn btn-primary">Upload Image           
+                                                             <input type="file" name="uploaded_file" onchange=>
+                                                        </span>
+                                                        <h4 style="color:cornsilk;font-weight: bold">Apartment Rules :</h4>
+                                                        <textarea></textarea>
+
+                                                    </div>
+
+
+                                                    <input type="submit" value="Save Information">
+                                                    <a href="FloorList.html"><input type="button" value="Back"> </a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                               
+
+                            </div>
+                        </div>
+                        <!-- Last five vistiors -->
+
+
+                        <!-- <div class="clearfix"> </div> -->
+                    </div>
 
 
 
@@ -332,6 +423,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li id="menu-academico-boletim"><a href="blank.html"> Management Member Type</a></li>
                         </ul>
                     </li>
+                    
 
                 </ul>
             </div>
