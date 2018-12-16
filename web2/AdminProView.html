@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Admin profile</title>
+    <title>Admin profile View</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -21,8 +21,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script>
     
     </script>
-     <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
-     <script>tinymce.init({ selector:'textarea' });</script>
+   
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://dhakadailybazar.com/apartment-management-system/dist/js/jquery.mask.min.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
@@ -53,6 +52,103 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script src="js/skycons.js"></script>
 
 </head>
+<style type="text/css">
+.emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+.profile-img{
+    text-align: center;
+}
+.profile-img img{
+    width: 70%;
+    height: 100%;
+}
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.profile-head h5{
+    color: #333;
+}
+.profile-head h6{
+    color: #0062cc;
+}
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+.proile-rating{
+    font-size: 12px;
+    color: #818182;
+    margin-top: 5%;
+}
+.proile-rating span{
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+.profile-head .nav-tabs{
+    margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link{
+    font-weight:600;
+    border: none;
+}
+.profile-head .nav-tabs .nav-link.active{
+    border: none;
+    border-bottom:2px solid #0062cc;
+}
+.profile-work{
+    padding: 14%;
+    margin-top: -15%;
+}
+.profile-work p{
+    font-size: 12px;
+    color: #818182;
+    font-weight: 600;
+    margin-top: 10%;
+}
+.profile-work a{
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+}
+.profile-work ul{
+    list-style: none;
+}
+.profile-tab label{
+    font-weight: 600;
+}
+.profile-tab p{
+    font-weight: 600;
+    color: #0062cc;
+}
+
+
+
+</style>
 
 <body style="background:url(images/wall9.jpg) repeat; position: relative;">
     <div class="page-container">
@@ -106,151 +202,122 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="inner-block">
 
-                    <!-- Box Bars Menu -->
+                    <div class="container emp-profile">
+                        <form method="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="profile-img">
+                                            <div class="text-center">
+                                                    <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+                                                    <div class="file btn btn-lg btn-primary">
+                                                            Change Photo
+                                                    <input type="file" class="text-center center-block file-upload">
+                                                  </div>
+                                      
+                                       
+                                            <script type="text/javascript">
+                                                $(document).ready(function() {
+                                                
+                                                    
+                                                    var readURL = function(input) {
+                                                        if (input.files && input.files[0]) {
+                                                            var reader = new FileReader();
+                                                
+                                                            reader.onload = function (e) {
+                                                                $('.avatar').attr('src', e.target.result);
+                                                            }
+                                                    
+                                                            reader.readAsDataURL(input.files[0]);
+                                                        }
+                                                    }
+                                                    
+                                                
+                                                    $(".file-upload").on('change', function(){
+                                                        readURL(this);
+                                                    });
+                                                });
+                                                </script>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="profile-head">
+                                                <h5>
+                                           Sinthujan Sintha
+                                                </h5>
+                                                <h6>
+                                               Admin Of Apartment System
+                                                </h6>
+                                              
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="home-tab" >About</a>
+                                            </li>
+                                           
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+       <button class="profile-edit-btn" name="btnAddMore"><a href="adminprofile.html"> Edit Profile</a></button> 
+                                </div>
+                            </div>
+                            <div class="row">
+                              
+                                <div class="col-md-8">
+                                    <div class="tab-content profile-tab" id="myTabContent">
+                                        <div class="" id="home" >
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label>User Id</label>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p>Sinthujan Sinthu</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label>Name</label>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p>P.Sinthujan</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label>Email</label>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p>Sinthujanspp@gmail.com</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label>Phone</label>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p>0776725515</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label>Profession</label>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p>Admin Of Apartment Management System</p>
+                                                        </div>
+                                                    </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </form>           
+                    </div>
                 
 
-                      
-                            <div class="container bootstrap snippet">
-                                <div class="row">
-                                      <div class="col-sm-10"><h1 style="color: aliceblue;font-weight: bold;font-size: 80px">User name</h1></div>
-                                    <div class="col-sm-2"><a href="images/mypro.jpg" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="http://www.gravatar.com/avatar/28fd20ccec6865e2d5f0e1f4446eb7bf?s=100"></a></div>
-                                </div>
-                                <div class="row">
-                                      <div class="col-sm-3"><!--left col-->
-                                          
-                            
-                                  <div class="text-center">
-                                    <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
-                                    <h6>Upload a different photo...</h6>
-                                    <input type="file" class="text-center center-block file-upload">
-                                  </div></hr><br>
-                            
-                                           
-                                      
-                                      
-                                      
                                    
-                                           
-                                     
-                                    </div><!--/col-3-->
-                                    <div class="col-sm-9">
-                                       
-                            
-                                          
-                                      <div class="tab-content">
-                                        <div class="tab-pane active" id="home">
-                                      
-                                              <form class="form" action="##" method="post" id="registrationForm">
-                                                  <div class="form-group">
-                                                      
-                                                      <div class="col-xs-6">
-                                                            <h4 style="color:cornsilk;font-weight: bold">First name:</h4>
-                                                      
-                                                          <input type="text" class="form-control" name="first_name" id="first_name" placeholder="first name" title="enter your first name if any.">
-                                                      </div>
-                                                  </div>
-                                                  <div class="form-group">
-                                                      
-                                                      <div class="col-xs-6">
-                                                            <h4 style="color:cornsilk;font-weight: bold">Last name:</h4>
-                                            
-                                                          <input type="text" class="form-control" name="last_name" id="last_name" placeholder="last name" title="enter your last name if any.">
-                                                      </div>
-                                                  </div>
-                                      
-                                                  <div class="form-group">
-                                                      
-                                                      <div class="col-xs-6">
-                                                       
-                                                          <h4 style="color:cornsilk;font-weight: bold">Phone:</h4>
-                                                          <input type="text" class="form-control" name="phone" id="phone" placeholder="enter phone" title="enter your phone number if any.">
-                                                      </div>
-                                                  </div>
-                                      
-                                                  <div class="form-group">
-                                                      <div class="col-xs-6">
-                                                   
-                                                         <h4 style="color:cornsilk;font-weight: bold">Mobile:</h4>
-                                                          <input type="text" class="form-control" name="mobile" id="mobile" placeholder="enter mobile number" title="enter your mobile number if any.">
-                                                      </div>
-                                                  </div>
-                                                  <div class="form-group">
-                                                      
-                                                      <div class="col-xs-6">
-                                                   
-                                                          <h4 style="color:cornsilk;font-weight: bold">Email:</h4>
-                                                          <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
-                                                      </div>
-                                                  </div>
-                                                  <div class="form-group">
-                                                      
-                                                      <div class="col-xs-6">
-                                                          
-                                                          <h4 style="color:cornsilk;font-weight: bold">Location:</h4>
-                                                          <input type="email" class="form-control" id="location" placeholder="somewhere" title="enter a location">
-                                                      </div>
-                                                  </div>
-                                                  <div class="form-group">
-                                                      
-                                                      <div class="col-xs-6">
-                                                         
-                                                          <h4 style="color:cornsilk;font-weight: bold">Password:</h4>
-                                                          <input type="password" class="form-control" name="password" id="password" placeholder="password" title="enter your password.">
-                                                      </div>
-                                                  </div>
-                                                  <div class="form-group">
-                                                      
-                                                      <div class="col-xs-6">
-                                              
-                                                        <h4 style="color:cornsilk;font-weight: bold">Verify:</h4>
-                                                          <input type="password" class="form-control" name="password2" id="password2" placeholder="password2" title="enter your password2.">
-                                                      </div>
-                                                  </div>
-                                                  <div class="form-group">
-                                                       <div class="col-xs-12">
-                                                            <br>
-                                                              <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
-                                                               <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
-                                                        </div>
-                                                  </div>
-                                              </form>
-                                          
-                                          <hr>
-                                          
-                                         </div><!--/tab-pane-->
-                                        
-                                               
-                                           
-                                          </div>
-                                           
-                                          </div><!--/tab-pane-->
-                                      </div><!--/tab-content-->
-                            
-                                
-                                </div><!--/row-->
-                                                                                  
-                            <script type="text/javascript">
-                            $(document).ready(function() {
-                            
-                                
-                                var readURL = function(input) {
-                                    if (input.files && input.files[0]) {
-                                        var reader = new FileReader();
-                            
-                                        reader.onload = function (e) {
-                                            $('.avatar').attr('src', e.target.result);
-                                        }
-                                
-                                        reader.readAsDataURL(input.files[0]);
-                                    }
-                                }
-                                
-                            
-                                $(".file-upload").on('change', function(){
-                                    readURL(this);
-                                });
-                            });
-                            </script>
+                          
                        
 
 
